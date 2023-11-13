@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splitter</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/73c4fb2a54.js" crossorigin="anonymous"></script>
+    <script defer src="./script.js"></script>
+</head>
+<body>
+
+    <!-- Heading logo splitter -->
+    <header>
+
+        <div class="divHeading">
+            <p>SPLI<br>TTER</p>
+        </div>
+
+    </header>
+
+
+    <!-- content -->
+
+    <section>
+
+        <div class="MainContainer">
+
+
+            <div class="left_input_container">
+
+                <div>
+                    <label for="inumber" class="labeling">Bill
+                    <i class="fa-solid fa-user"></i><br>
+                    <input type="number"min="1" id="inumber" class="same-input">
+                </label>
+
+                </div>
+
+                <div class="btn-div">
+
+                    <p class="labeling">Select tip %</p>
+                    
+                    <button data-id="5" class="mybtn">
+                        5%
+                    </button>
+
+                    <button data-id="10" class="mybtn">
+                        10%
+                    </button>
+
+                    <button data-id="15" class="mybtn">
+                        15%
+                    </button>
+
+                    <button data-id="25" class="mybtn">
+                        25%
+                    </button>
+
+                    <button data-id="50" class="mybtn">
+                        50%
+                    </button>
+
+                  
+                    <span class="customDiv">
+                        <input type="number" min="1" class="customInput" placeholder="CUSTOM">
+                    </span>
+                </div>
+
+
+                <div>
+                    <label class="labeling" for="ipeople">Number of People
+                    <i class="fa-solid fa-dollar-sign"></i><br>
+                    <input type="number", id="ipeople" min="1" class="same-input">
+                </label>
+
+                </div>   
+
+            </div>
+
+            <div class="right_input_container">
+
+                <div class="right_container_child">
+
+                    <div class="tip_amount">
+                        <span>
+                            <p class="title">Tip Amount</p>
+                            <p class="belowtitle">/person</p>
+                        </span>
+    
+                        <span class="cash">
+                            <p class="digit ">$<span class="tipDigit">00.0</span></p>
+                        </span>
+                    </div>
+    
+    
+                    
+                    <div class="total_amount">
+                        <span>
+                            <p class="title">Total</p>
+                            <p class="belowtitle">/person</p>
+                        </span>
+    
+                        <span class="cash">
+                           <p class="digit ">$<span class="amtDigit">00.0</span></p>
+                        </span>
+    
+                       
+                    </div>
+
+                    <div class="reset">
+                        <button class="resetBtn">RESET</button>
+                    </div>
+                    
+
+                </div>
+
+              
+
+            </div> 
+
+
+
+
+
+
+        </div>
+
+    </section>
+
+       
+        
+    
+</body>
+</html>

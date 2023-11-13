@@ -1,0 +1,255 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Exo&family=Merriweather&family=Space+Mono&display=swap');
+
+:root {
+
+    --main-color:#00474B;
+    --form-color:#F1F8F9;
+    --background-color:#C0DFE1;
+    --digit-color:#1E9F90;
+    --container-background:white;
+
+}
+
+body{
+
+    margin:0px;
+    padding:0px;
+    /* font-family: 'Exo', sans-serif; */
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Space Mono', monospace;
+    font-size:20px;
+    background-color: var(--background-color);
+    align-items:center;
+
+}
+
+
+
+
+/* Heading logo splitter */
+.divHeading{
+
+    display:flex;
+    /* align-items:center; */
+    justify-content: center;
+    color:var(--main-color);
+    font-weight:bold;
+    
+    
+}
+
+
+/* Div section main container */
+
+section{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.MainContainer{
+
+    background-color: var(--container-background);
+    height:85vh;
+    width:80vw;;
+    border-radius:15px; 
+    display: flex;
+    overflow: auto;
+}
+
+
+.left_input_container{
+
+    margin-right:0px;
+    width:50%;
+    height:100%;
+    padding:50px 0px 10px 60px;
+    box-sizing: border-box;
+    
+}
+
+.left_input_container div{
+    padding-bottom: 35px;
+}
+
+/* 
+#inumber{
+
+    background-image: url("images/dollar.png");
+   
+
+}
+
+#ipeople{
+    background-image:url("images/user.png");
+} */
+
+.same-input{
+ 
+    border:0px;
+    user-select: none;
+    outline:none;
+    height:60px;
+    width:90%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left:10px;
+
+/*    
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 15px 20px; */
+    box-sizing: border-box;
+
+
+    padding-left: 25rem;
+       background-color:#F1F8F9;
+   
+}
+
+i{
+    color:#6B7776;
+}
+
+.fa-user{
+    position:relative;
+    top:45px;
+    right:30px;
+    z-index: 1;
+}
+
+.fa-dollar-sign{
+    position:relative;
+    top:45px;
+    right:162px;
+    z-index: 1;
+
+}
+
+
+
+
+.btn-div button{
+    border:0;
+    height:53px;
+    width:130px;
+    margin:0px 15px 15px 0px;
+    color:var(--form-color);
+    background-color:var(--main-color);
+    border-radius:3px;
+    font-size:23px;
+    cursor: pointer;
+    
+}
+
+button:hover{
+
+    background-color:var(--digit-color);
+
+}
+
+
+
+
+.customInput{
+    height:53px;
+    width:130px;
+    margin:0px 15px 15px 0px;
+    color:var(--digit-color);
+    background-color:#F1F8F9;
+    border:0px;
+    outline:none;
+    border-radius:3px;
+    font-size:20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding-left:1rem;
+    align-items:center;
+
+    
+}
+
+
+.labeling{
+    color:#6B7776;
+    font-size: 18px;
+}
+
+
+.right_input_container{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.right_container_child{
+    margin-left:0px;
+    background-color: var(--main-color);
+    color:var(--form-color);
+    width:90%;
+    height:90%;
+    border-radius: 10px;
+    /* display:flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.right_container_child div{
+
+    display: flex;
+    justify-content:space-around;
+    width:100%;
+    padding:0px;
+    padding-top:20px;
+    
+}
+
+.title{
+    padding-top: 30px;
+    padding-bottom:0px;
+    margin-bottom:0px;
+   
+
+}
+
+.belowtitle{
+
+    font-size:15px;
+    color:#659D9F;
+    padding:0px;
+    margin:0px;
+
+}
+
+.digit{
+    font-size: 50px;
+    font-weight:900;
+    color:var(--digit-color);
+}
+
+
+
+.reset button{
+    width:75%;
+    height:60px;
+    border-radius: 5px;;
+    background-color: var(--digit-color);
+    font-size: 20px;
+    font-weight: bold;
+    border:0px;
+    outline:none;
+    color:var(--main-color);
+}
+
+.reset button:hover{
+    color:white;
+}
+
+
