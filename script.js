@@ -12,6 +12,11 @@ const amtDigit = document.querySelector('.amtDigit');
 
 const resetBtn = document.querySelector('.resetBtn');
 
+const faUser = document.querySelector('.fa-user')
+
+const CanNotBe0 = document.querySelector('.CanNotBe0');
+
+const tipDisplay = document.querySelector('.tipDisplay');
 
 // TOPIC storage
 
@@ -48,7 +53,7 @@ const result = {
 
 const billFn = function(){
 
-    if(billInput.value && billInput.value>0){
+    if(billInput.value){
 
         data.bill= billInput.value;
         updateCallerFunction();
@@ -58,10 +63,17 @@ const billFn = function(){
 
 const peopleFn = function(){
 
-    if(peopleInput.value && peopleInput.value>0){
+    if(peopleInput.value && Number(peopleInput.value)>0){
+       
         data.people = peopleInput.value;
         updateCallerFunction();
+        CanNotBe0.classList.add('hidden');
+        
+    }else{
+        CanNotBe0.classList.remove('hidden');
+        data.people = 0;
     }
+   
 };
 
 /**
@@ -72,13 +84,23 @@ const btnFn = function(each){
 
 
         data.tip = each.dataset.id;
+        customInput.value = '';
+        displayTipFn();
         updateCallerFunction();
+}
+
+const displayTipFn = function(){
+
+    tipDisplay.textContent= data.tip;
+    tipDisplay.classList.remove("hidden");
+
 }
 
 const customFn = function(){
 
-    if(customInput.value && customInput.value>0){
+    if(customInput.value){
         data.tip = customInput.value;
+        displayTipFn();
         updateCallerFunction();
     }
 
