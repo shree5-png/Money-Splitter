@@ -58,7 +58,7 @@ section{
     /* height:85vh; */
     height:100%;
     width:80vw;
-    border-radius:15px; 
+    border-radius:15px;
     display: flex;
     overflow: auto;
 }
@@ -90,7 +90,7 @@ section{
     font-weight: bold;
     margin-left:10px;
     box-sizing: border-box;
-    padding-left: 25rem;
+    text-align: right;
     background-color:#F1F8F9;
    
 }
@@ -107,6 +107,10 @@ i{
 
 }
 
+.tipDisplay{
+    color:var(--digit-color);
+}
+
 .fa-dollar-sign{
 
     position:relative;
@@ -114,10 +118,7 @@ i{
     right:30px;
     z-index: 1;
 
-   
 }
-
-
 
 
 .btn-div button{
@@ -129,8 +130,7 @@ i{
     background-color:var(--main-color);
     border-radius:3px;
     font-size:23px;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 
 button:hover{
@@ -157,10 +157,9 @@ button:active{
     font-size:20px;
     font-weight: bold;
     box-sizing: border-box;
-    padding-left:1rem;
-    align-items:center;
-
-    
+    padding-right:1rem;
+    align-items:center; 
+    text-align:right;
 }
 
 
@@ -320,9 +319,7 @@ button:active{
         padding-left:30px;
     }
 
-    .same-input{
-        padding-left: 15rem
-    }
+  
 
     .btn-div button{
         height:45px;

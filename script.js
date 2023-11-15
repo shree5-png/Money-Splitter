@@ -123,6 +123,8 @@ const resetFn= function(){
         each.value = '';
     })
     customInput.value = '';
+    displayTipFn();
+
 };
 
 
