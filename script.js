@@ -124,6 +124,8 @@ const resetFn= function(){
     })
     customInput.value = '';
     displayTipFn();
+    CanNotBe0.classList.add("hidden");
+
 
 };
 

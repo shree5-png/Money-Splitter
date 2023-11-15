@@ -313,13 +313,9 @@ button:active{
 
 @media only screen and (max-width: 510px){
 
-
-
     .left_input_container{
         padding-left:30px;
     }
-
-  
 
     .btn-div button{
         height:45px;
